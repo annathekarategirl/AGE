@@ -4,11 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script>
+        const myText=document.getElementById("ageinput");
+        const mySubmit=document.getElementById("mit");
+        const myResult=document.getElementById("resultText");
+        let age;
+        mySubmit.onclick=function(){
+            age= myText.value;
+            age=Number(age);
+            myResult.textContent="Your message here"
+        }
+    </script>
 </head>
 <body>
-    <label for="age" id="lab">Age: </label>
-    <input type="text" id="age">
-    <input type="submit">erm</input>
+    <label for="ageinput" id="lab">Age: </label>
+    <input type="text" id="ageinput">
+    <input type="submit" id="mit"></input>
     <p id="resultText"></p>
+
 </body>.
 </html>
