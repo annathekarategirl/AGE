@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <script>
+    
+</head>
+<body>
+    <label for="ageinput" id="lab">Age: </label>
+    <input type="text" id="ageinput">
+    <input type="submit" id="mit"></input>
+    <p id="resultText"></p>
+<script>
         const myText=document.getElementById("ageinput");
         const mySubmit=document.getElementById("mit");
         const myResult=document.getElementById("resultText");
@@ -13,15 +20,8 @@
         mySubmit.onclick=function(){
             age= myText.value;
             age=Number(age);
-            myResult.textContent="Your message here"
-        }
+            myResult.textContent="Your message here";
+        };
     </script>
-</head>
-<body>
-    <label for="ageinput" id="lab">Age: </label>
-    <input type="text" id="ageinput">
-    <input type="submit" id="mit"></input>
-    <p id="resultText"></p>
-
 </body>.
 </html>
