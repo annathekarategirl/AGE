@@ -20,7 +20,9 @@
         mySubmit.onclick=function(){
             age= myText.value;
             age=Number(age);
-            myResult.textContent="Your message here";
+            if (age<0){
+            myResult.textContent="Your message here";}
+
         };
     </script>
 </body>.
