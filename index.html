@@ -21,7 +21,23 @@
             age= myText.value;
             age=Number(age);
             if (age<0){
-            myResult.textContent="Unborn child";}
+                myResult.textContent="Unborn child";
+            }
+            else if (age>0 && age<14){
+                myResult.textContent="Get back to work";
+            }
+            else if(age>=14 && age<18){
+                myResult.textContent="podcast";
+            }
+            else if(age==18){
+                myResult.textContent="pop3";
+            }
+            else if(age>18 && age<=27){
+                myResult.textContent="younger than my sister"
+            }
+            else if(age>27)[
+                myResult.textContent="Unc"
+            ]
 
         };
     </script>
